@@ -1,0 +1,56 @@
+.streakCard {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: white;
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-6);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.streakNumber {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  margin: var(--spacing-2) 0;
+}
+
+.streakLabel {
+  font-size: var(--font-size-sm);
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.streakMeta {
+  margin-top: var(--spacing-4);
+  padding-top: var(--spacing-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: var(--font-size-sm);
+  opacity: 0.85;
+}
+
+.fire {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: var(--spacing-1);
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.tokenBadge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: var(--spacing-1) var(--spacing-3);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  margin: var(--spacing-1);
+  backdrop-filter: blur(10px);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
